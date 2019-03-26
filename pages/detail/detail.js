@@ -1,31 +1,39 @@
-// pages/list/list.js
+// pages/detail/detail.js
 let listDatas = require('../../datas/list-data.js');
-console.log(listDatas, typeof listDatas);
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    listDatas: []
+    isCollected: false, // 未收藏
+    detailObj: {}
   },
-  // 跳转到详情页
-  toDetail(event){
-    console.log(event);
-    let index = event.currentTarget.dataset.index;
-    wx.navigateTo({
-      url: '/pages/detail/detail?index=' + index,
+  // 处理收藏功能的函数
+  handleCollection(){
+    // 修改是否收藏的状态
+    let isCollected = !this.data.isCollected;
+    this.setData({
+      isCollected
+    })
+
+    let title = isCollected?'收藏成功': '取消收藏';
+    // 显示消息提示
+    wx.showToast({
+      title,
+      icon: 'success'
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // 更新listDatas的状态之
+    console.log(options);
+    let index = options.index;
     this.setData({
-      listDatas: listDatas.list_data
-    });
+      detailObj: listDatas.list_data[index],
+      index: index
+    })
   },
 
   /**

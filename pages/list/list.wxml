@@ -16,7 +16,7 @@
     </swiper-item>
   </swiper>
   <block wx:for='{{listDatas}}' wx:key='{{index}}'>
-    <view>
+    <view catchtap='toDetail' data-index='{{index}}'>
       <template data='{{...item}}' is='listTmp'></template>
     </view>
   </block>
