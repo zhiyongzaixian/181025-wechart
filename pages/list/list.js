@@ -1,51 +1,32 @@
-// pages/index/index.js
-Page({ // 注册当前页面
+// pages/list/list.js
+Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg: '测试数据'
+
   },
-  toList(){
-    // 跳转到list页面
-    wx.navigateTo({
-      url: '/pages/list/list',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // 发送ajax请求，开启定时器异步任务
-    console.log('onLoad');
-    // this 当前页面的实例
-    console.log(this.msg);
 
-    // React修改状态
-    // this.setState({
-    //   msg: 'xxx'
-    // }, () => {
-    //   console.log(this.state.msg);
-    // })
-
-    this.setData({
-      msg: '修改数据'
-    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log('onReady');
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log('onShow');
+
   },
 
   /**
