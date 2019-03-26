@@ -27,3 +27,9 @@
     1. 定义： template ---> name
     2. 引用: template ---> is
     3. 导入数据: data=''
+  4. 如何给事件的event对象传递数据
+    1. 传递: data-key = value
+    2. event.target || event.currentTarget.dataset.key ---> 传递的value值
+  5. 如何通过路由跳转传递数据
+    1. 语法: 路由路径?key=value
+    2. 获取: 目标页面onLoad获取实参options ---> 默认是{} ---> {key: value}
