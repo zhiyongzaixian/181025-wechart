@@ -14,6 +14,7 @@ Page({
   toDetail(event){
     console.log(event);
     let index = event.currentTarget.dataset.index;
+    // 将index传递给要跳转的detail页面
     wx.navigateTo({
       url: '/pages/detail/detail?index=' + index,
     })

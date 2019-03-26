@@ -23,6 +23,20 @@ Page({
       title,
       icon: 'success'
     })
+
+    // 缓存是否收藏的状态
+    // 缓存思路：
+    /*
+      对象 : {0: true, 1: false,  2: true}
+    
+     */
+    let {index} = this.data;
+    let obj = wx.getStorageSync('isCollected');
+    console.log(obj, 'xxxx');
+    // 用户首次访问预处理
+    obj = obj?obj:{};
+    obj[index] = isCollected;
+    wx.setStorageSync('isCollected', obj)
   },
   /**
    * 生命周期函数--监听页面加载
@@ -34,6 +48,16 @@ Page({
       detailObj: listDatas.list_data[index],
       index: index
     })
+
+    // 获取本地缓存的是否收藏的状态
+    let oldObj = wx.getStorageSync('isCollected');
+    // 判断当前页面是否被收藏
+    if(oldObj[index]){
+      // 更新状态
+      this.setData({
+        isCollected: true
+      })
+    }
   },
 
   /**
