@@ -7,3 +7,23 @@
     2. index.wxss ---> css
     3. index.js ---> 页面的逻辑 ---> Page({})
     4. index.json ---> 页面的配置
+    
+
+## 小程序特点
+  1. 没有DOM对象
+  2. 一切基于组件化
+  3. 体积特别小，刚发布的时候1M， 2017年四月份提升到2M
+  4. 小程序适配方案: viewport + rpx(物理像素单位)
+  5. 小程序推荐使用flex布局
+
+## 小程序语法
+  1. 数据绑定
+    1. 单项数据流： M ---> V
+    2. 修改数据状态: this.setData({})
+  2. 绑定事件
+    1. 冒泡事件 ---> bind
+    2. 非冒泡事件 ---> catch
+  3. template
+    1. 定义： template ---> name
+    2. 引用: template ---> is
+    3. 导入数据: data=''

@@ -1,18 +1,24 @@
 // pages/list/list.js
+let listDatas = require('../../datas/list-data.js');
+console.log(listDatas, typeof listDatas);
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    listDatas: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 更新listDatas的状态之
+    this.setData({
+      listDatas: listDatas.list_data
+    });
   },
 
   /**

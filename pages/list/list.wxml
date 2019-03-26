@@ -1,3 +1,5 @@
+
+<import src="../listTmp/listTmp.wxml" />
 <view class='listContainer'>
   <swiper indicator-dots indicator-color='green' circular indicator-active-color='pink'>
     <swiper-item>
@@ -13,4 +15,9 @@
       <image src='/images/detail/carousel/04.jpg'></image>
     </swiper-item>
   </swiper>
+  <block wx:for='{{listDatas}}' wx:key='{{index}}'>
+    <view>
+      <template data='{{...item}}' is='listTmp'></template>
+    </view>
+  </block>
 </view>
