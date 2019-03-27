@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe188176-d475-415d-8fc9-a01b6c581324" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.json" afterPath="$PROJECT_DIR$/pages/index/index.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/list/list.js" afterPath="$PROJECT_DIR$/pages/list/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/list/list.json" afterPath="$PROJECT_DIR$/pages/list/list.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/list/list.wxml" afterPath="$PROJECT_DIR$/pages/list/list.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/listTmp/listTmp.wxss" afterPath="$PROJECT_DIR$/pages/listTmp/listTmp.wxss" />
-    </list>
+    <list default="true" id="fe188176-d475-415d-8fc9-a01b6c581324" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />

@@ -33,3 +33,11 @@
   5. 如何通过路由跳转传递数据
     1. 语法: 路由路径?key=value
     2. 获取: 目标页面onLoad获取实参options ---> 默认是{} ---> {key: value}
+  6. 数据缓存
+    1. wx.setStorage || wx.setStorageSync 设置缓存的 单个 key 允许存储的最大数据长度为 1MB，所有数据存储上限为 10MB
+    2. wx.getStorage || wx.getStorageSync 
+  7. 发送请求
+    1. 语法: wx.request()
+    2. 注意点:
+      1. 协议必须是https协议
+      2. 最大并发限制是10个
